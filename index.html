@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layana Krimi – Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav">
+  <a href="#" class="logo">LK</a>
+  <nav class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Layana Krimi</h1>
+  <p class="subtitle">Étudiante MMI – Design & Développement Web</p>
+  <a href="#about" class="button">Qui suis-je ?</a>
+</section>
+
+<main class="container">
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>Qui suis-je ?</h2>
+
+  <div class="about">
+
+    <!-- PHOTO -->
+    <div class="photo-wrapper">
+      <span class="pin"></span>
+      <span class="tape"></span>
+
+      <div class="photo-frame white-frame">
+        <img src="https://zupimages.net/up/26/02/890u.jpg" alt="Photo de Layana Krimi">
+      </div>
+    </div>
+
+    <!-- TEXTE -->
+    <div class="about-text">
+      <p>
+        Je suis <strong>Layana Krimi</strong>, 18 ans, étudiante en première année de MMI.
+        Passionnée par le design, le digital et les stratégies de communication,
+        titulaire d’un baccalauréat HGGSP et SES, j’aimerais à terme me spécialiser
+        dans le domaine de la communication.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- INFORMATIONS -->
+<section class="section" id="informations">
+  <h2>Informations</h2>
+  <div class="info-grid">
+    <a href="#parcours" class="info-card">Parcours</a>
+    <a href="#competences" class="info-card">Compétences</a>
+    <a href="#projets" class="info-card">Projets</a>
+    <a href="#contact" class="info-card">Contact</a>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section class="section" id="projets">
+  <h2>Projets</h2>
+  <div class="projects">
+    <a href="PHOTOSHOP.html" class="project-card">Illustrator / Photoshop</a>
+    <a href="GESTIONDEPROJET.html" class="project-card">Gestion de Projet</a>
+    <a href="VISUALCODE.html" class="project-card">Visual Code</a>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section class="section" id="parcours">
+  <h2>Parcours</h2>
+
+  <div class="timeline-vertical">
+
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <a href="bac.html" class="timeline-content clickable">
+        Bac Général – HGGSP / SES
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <a href="retro.html" class="timeline-content clickable">
+        Influence – Pub – Application Retro
+      </a>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-dot"></span>
+      <a href="yope.html" class="timeline-content clickable">
+        Influence – Pub – Application Yope
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section class="section" id="competences">
+  <h2>Compétences</h2>
+
+  <div class="skill" data-level="65">
+    <div class="skill-header">
+      <h3>Illustrator / Photoshop</h3>
+      <span>65%</span>
+    </div>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+
+  <div class="skill" data-level="100">
+    <div class="skill-header">
+      <h3>Gestion de projet</h3>
+      <span>100%</span>
+    </div>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+
+  <div class="skill" data-level="35">
+    <div class="skill-header">
+      <h3>Codage</h3>
+      <span>35%</span>
+    </div>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+
+  <div class="skill" data-level="70">
+    <div class="skill-header">
+      <h3>Stratégie de com</h3>
+      <span>70%</span>
+    </div>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contactez-moi</h2>
+
+  <form class="contact-form" id="contactForm">
+
+    <div class="form-group">
+      <label class="highlight-yellow">Name</label>
+      <input type="text" name="name" placeholder="Écris ton nom ici">
+    </div>
+
+    <div class="form-group">
+      <label class="highlight-lila">Your email</label>
+      <input type="email" name="email" placeholder="Écris ton email ici">
+    </div>
+
+    <div class="form-group">
+      <label class="highlight-blue">About Project</label>
+      <input type="text" name="message" placeholder="Écris ton message ici">
+    </div>
+
+    <div class="send-wrapper">
+      <button type="submit" class="send-button">Envoyer →</button>
+    </div>
+
+  </form>
+
+  <!-- SOCIALS -->
+  <div class="socials">
+
+    <div class="social-wrapper twitter">
+      <a href="https://twitter.com/krimi_5" target="_blank" class="social-btn">Twitter X</a>
+      <span class="social-bubble">@krimi_5</span>
+    </div>
+
+    <div class="social-wrapper tiktok">
+      <a href="https://www.tiktok.com/@bljfndo" target="_blank" class="social-btn">TikTok</a>
+      <span class="social-bubble">@bljfndo</span>
+    </div>
+
+    <div class="social-wrapper instagram">
+      <a href="https://instagram.com/layana.krimi" target="_blank" class="social-btn">Instagram</a>
+      <span class="social-bubble">@layana.krimi</span>
+    </div>
+
+    <div class="social-wrapper mail">
+      <a href="mailto:layanakrimi@gmail.com" class="social-btn">Mail</a>
+      <span class="social-bubble">layanakrimi@gmail.com</span>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© Portfolio 2025 – Tous droits réservés – Layana Krimi</p>
+</footer>
+
+<!-- JS -->
+<script>
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    form.reset();
+    alert("Message envoyé !");
+  });
+</script>
+
+</body>
+</html>

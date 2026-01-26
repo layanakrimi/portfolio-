@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion de projet – Portfolio Layana</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fde8a8;
+    }
+
+    .page-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 60px;
+    }
+
+    /* BOUTON */
+    .back-button {
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 12px 30px;
+      background: #ffd7e5;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid #000;
+      border-radius: 25px;
+      box-shadow: 4px 4px 0 #000;
+    }
+
+    /* GRILLE */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      justify-items: center;
+    }
+
+    /* CADRES */
+    .white-frame {
+      background: #fff;
+      border: 3px solid #000;
+      border-radius: 12px;
+      box-shadow: 8px 8px 0 #000;
+      width: 100%;
+      max-width: 480px;
+      min-height: 260px;
+      padding: 20px;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* rotations légères */
+    .frame-1 { transform: rotate(-1.5deg); }
+    .frame-2 { transform: rotate(1.2deg); }
+    .frame-3 { transform: rotate(-0.8deg); }
+
+    /* hover vivant */
+    .white-frame:hover {
+      transform: scale(1.03) rotate(0deg);
+      box-shadow: 12px 12px 0 #000;
+    }
+
+    /* TITRES */
+    .white-frame h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0 0 15px 0;
+      text-transform: uppercase;
+    }
+
+    .white-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer; /* pour montrer que c'est cliquable */
+    }
+
+    /* GANTT centré */
+    .gantt {
+      grid-column: 1 / 3;
+      max-width: 720px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gantt {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-content">
+    <a href="../index.html#projets" class="back-button">← Retour aux projets</a>
+
+    <h1>Gestion de projet</h1>
+
+    <div class="grid">
+
+      <!-- DIAGRAMS -->
+      <div class="white-frame frame-1">
+        <h2>Diagrams</h2>
+        <a href="diagram.html">
+          <img src="https://zupimages.net/up/26/02/zdh9.png" alt="Diragammas" />
+        </a>
+      </div>
+
+      <!-- PLAN DES TÂCHES -->
+      <div class="white-frame frame-2">
+        <h2>Plan des tâches</h2>
+        <a href="plantaches.html">
+          <img src="https://zupimages.net/up/26/02/i35v.png" alt="Plan des tâches" />
+        </a>
+      </div>
+
+      <!-- GANTT -->
+      <div class="white-frame gantt frame-3">
+        <h2>Gantt</h2>
+        <a href="gantt.html">
+          <img src="https://zupimages.net/up/26/02/4pfs.png" alt="Gantt" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 – Layana Krimi</p>
+  </footer>
+
+</body>
+</html>

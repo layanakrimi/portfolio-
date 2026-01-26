@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baccalauréat – Parcours</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <style>
+    /* BOUTON RETOUR */
+    .back-button {
+      display: inline-block;
+      margin: 30px 0;
+      padding: 12px 30px;
+      background: #ffd7e5;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid #000;
+      border-radius: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .back-button:hover {
+      transform: scale(1.05);
+      box-shadow: 5px 5px 0 #000;
+    }
+
+    /* CONTENU */
+    .illustrator-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    .illustrator-content h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .illustrator-content img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 6px 6px 0 #000;
+    }
+
+    .illustrator-content p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* BULLE MENTION */
+    .mention-bubble {
+      display: inline-block;
+      margin: 20px auto 50px;
+      padding: 14px 28px;
+      background: #fff1b8;
+      border: 2px solid #000;
+      border-radius: 30px;
+      font-weight: 700;
+      box-shadow: 6px 6px 0 #000;
+      animation: breathe 3s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+      100% { transform: scale(1); }
+    }
+
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body>
+
+  <div class="illustrator-content">
+
+    <!-- BOUTON RETOUR -->
+    <a href="../index.html#parcours" class="back-button">← Retour aux Parcours</a>
+
+    <h1>Baccalauréat Général</h1>
+
+    <div class="mention-bubble">
+      Mention Assez Bien 🎓
+    </div>
+
+    <p>
+      J’ai obtenu mon <strong>Baccalauréat général</strong> avec les spécialités
+      <strong>HGGSP</strong> (Histoire-Géographie, Géopolitique et Sciences Politiques)
+      et <strong>SES</strong> (Sciences Économiques et Sociales), accompagné de la
+      <strong>mention Assez Bien</strong>.
+    </p>
+
+    <p>
+      Ces spécialités m’ont permis de développer de solides compétences en
+      <strong>communication</strong>, notamment à travers l’analyse de documents,
+      la construction d’arguments, la prise de parole et l’expression écrite.
+    </p>
+
+    <p>
+      Les enseignements en <strong>HGGSP</strong> et en <strong>SES</strong> m’ont appris
+      à comprendre les enjeux politiques, économiques et sociaux, ainsi qu’à
+      structurer mes idées de manière claire et pertinente.
+    </p>
+
+    <p>
+      Ce parcours constitue une étape essentielle dans mon orientation vers des
+      domaines liés à la <strong>communication</strong>, à l’analyse des discours
+      et à la compréhension des dynamiques de société.
+    </p>
+
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 – Layana Krimi</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affiche Vampire – Portfolio Layana</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #fff1b8;
+      --card-bg: #ffffff;
+      --accent-pink: #ffd7e5;
+      --accent-purple: #b68cb8;
+      --text-main: #1e1e1e;
+      --border: #000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 12px 30px;
+      background: var(--accent-pink);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--border);
+      border-radius: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .back-button:hover {
+      transform: scale(1.05);
+      box-shadow: 5px 5px 0 #000;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      font-weight: 300;
+    }
+
+    .project-layout {
+      display: flex;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 768px) {
+      .project-layout {
+        flex-direction: column;
+      }
+    }
+
+    .polaroid {
+      background: var(--accent-purple);
+      padding: 15px 15px 50px 15px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+      transform: rotate(-2deg);
+      max-width: 320px;
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 2px solid #000;
+    }
+
+    .polaroid p {
+      margin-top: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .project-text {
+      background: var(--card-bg);
+      border: 2px solid #000;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 6px 6px 0 #000;
+      flex: 1;
+    }
+
+    .project-text h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .project-text p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .info-list {
+      margin-top: 20px;
+    }
+
+    .info-list li {
+      list-style: none;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .info-list strong {
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 0 20px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <a href="PHOTOSHOP.html" class="back-button">← Retour aux projets</a>
+
+    <h1>Affiche de spectacle</h1>
+    <p class="subtitle">Projet Illustrator – Création graphique</p>
+
+    <div class="project-layout">
+      
+      <!-- IMAGE -->
+      <div class="polaroid">
+        <img src="https://zupimages.net/up/26/02/tj2q.png" alt="Affiche vampire">
+        <p>Spectacle – Univers vampire</p>
+      </div>
+
+      <!-- TEXTE -->
+      <div class="project-text">
+        <h2>Présentation du projet</h2>
+        <p>
+          Dans le cadre d’un devoir sur Adobe Illustrator, j’ai réalisé l’affiche d’un
+          spectacle sur le thème des vampires. L’objectif était de concevoir une affiche
+          attractive en travaillant l’univers visuel, la composition et la typographie.
+        </p>
+
+        <p>
+          J’ai choisi un univers sombre et mystérieux afin de rappeler l’imaginaire du
+          vampire. Les couleurs contrastées, les formes stylisées et les choix typographiques
+          permettent de créer une ambiance dramatique et immersive.
+        </p>
+
+        <ul class="info-list">
+          <li><strong>Type de projet :</strong> Affiche de spectacle</li>
+          <li><strong>Thème :</strong> Vampire / Fantastique</li>
+          <li><strong>Logiciel :</strong> Adobe Illustrator</li>
+          <li><strong>Objectifs :</strong> Composition, typographie, ambiance visuelle</li>
+          <li><strong>Compétences développées :</strong> Création graphique, illustration, mise en page</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 – Layana Krimi</p>
+  </footer>
+
+</body>
+</html>

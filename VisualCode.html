@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Chat – Portfolio Layana</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #fde8a8;
+      --card-bg: #ffffff;
+      --accent-pink: #ffd7e5;
+      --accent-purple: #b68cb8;
+      --text-main: #1e1e1e;
+      --border: #000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 12px 30px;
+      background: var(--accent-pink);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--border);
+      border-radius: 25px;
+      box-shadow: 4px 4px 0 #000;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .back-button:hover {
+      transform: scale(1.05);
+      box-shadow: 6px 6px 0 #000;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 60px;
+      font-weight: 300;
+    }
+
+    .project-layout {
+      display: flex;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 1024px) {
+      .project-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .polaroid {
+      background: var(--accent-purple);
+      padding: 20px 20px 55px 20px;
+      border: 2px solid #000;
+      border-radius: 10px;
+      box-shadow: 12px 12px 18px rgba(0,0,0,0.35);
+      transform: rotate(-3deg);
+      max-width: 600px;
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .polaroid img {
+      width: 100%;
+      display: block;
+      border-bottom: 2px solid #000;
+    }
+
+    .polaroid p {
+      margin-top: 14px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .project-text {
+      background: var(--card-bg);
+      border: 2px solid #000;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 6px 6px 0 #000;
+      flex: 1;
+    }
+
+    .project-text h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .project-text p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .info-list {
+      margin-top: 20px;
+    }
+
+    .info-list li {
+      list-style: none;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .info-list strong {
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 0 20px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a href="../index.html#projets" class="back-button">← Retour aux projets</a>
+
+    <h1>Mini Chat</h1>
+    <p class="subtitle">Projet de développement web – Visual Studio Code</p>
+
+    <div class="project-layout">
+
+      <!-- IMAGE -->
+      <div class="polaroid">
+        <img src="https://zupimages.net/up/26/02/309w.png" alt="">
+        <p>Mini Chat – Interface & code</p>
+      </div>
+
+      <!-- TEXTE -->
+      <div class="project-text">
+        <h2>Présentation du projet</h2>
+
+        <p>
+          Ce projet consiste en la création d’un <strong>mini chat interactif</strong> développé à l’aide de
+          <strong>Visual Studio Code</strong>. Il permet aux utilisateurs d’échanger des messages via une
+          interface simple et intuitive.
+        </p>
+
+        <p>
+          L’objectif était de mettre en pratique les bases du développement web, notamment la
+          structuration du code, la gestion des interactions utilisateur et l’affichage dynamique
+          des messages.
+        </p>
+
+        <ul class="info-list">
+          <li><strong>Type :</strong> Application web</li>
+          <li><strong>Fonctionnalités :</strong> Envoi et affichage de messages</li>
+          <li><strong>Langages :</strong> HTML / CSS / JavaScript</li>
+          <li><strong>Outil :</strong> Visual Studio Code</li>
+          <li><strong>Objectif :</strong> Comprendre la logique et l’interactivité</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 – Layana Krimi</p>
+  </footer>
+
+</body>
+</html>

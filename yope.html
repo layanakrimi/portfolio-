@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Influence – Pub – Application Yope</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* CONTENEUR PRINCIPAL FLEX */
+    .retro-container {
+      display: flex;
+      align-items: center; /* centre verticalement */
+      justify-content: center;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    /* POST-IT LOGO */
+    .logo-retro-postit {
+      flex: 0 0 250px; /* taille fixe pour le post-it */
+      background: #f8a8c4;
+      border: 2px solid #ffd7e5;
+      border-radius: 8px;
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+      padding: 15px;
+      text-align: center;
+      animation: floatLogo 3s ease-in-out infinite;
+      margin-left: -80px; /* plus à gauche */
+      position: relative;
+    }
+
+    /* SKOTCH DÉCORATIF */
+    .skotch {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-5deg);
+      width: 60px;
+      height: 12px;
+      background: #f77bf7; /* couleur type scotch */
+      border-radius: 3px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .logo-retro-postit img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(2deg); }
+    }
+
+    /* CONTENU TEXTE */
+    .retro-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .retro-content h1 {
+      font-size: 3rem;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .retro-content p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    /* BOUTON RETOUR */
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 12px 30px;
+      background: #ffd7e5;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid #000;
+      border-radius: 25px;
+      box-shadow: 5px 5px 0 #000;
+    }
+
+    /* TAG MISSION */
+    .mission-tag {
+      display: inline-block;
+      margin: 20px 0 40px;
+      padding: 12px 26px;
+      background: #e6d9ff;
+      border: 2px solid #000;
+      border-radius: 30px;
+      font-weight: 700;
+      box-shadow: 5px 5px 0 #000;
+      animation: breathe 3s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .retro-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .retro-content h1, .retro-content p {
+        text-align: center;
+      }
+      .logo-retro-postit {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="retro-container">
+
+    <!-- POST-IT LOGO -->
+    <div class="logo-retro-postit">
+      <div class="skotch"></div>
+      <img src="https://play-lh.googleusercontent.com/K3Y8gu9Q61T3ymirlS09ZHCKD8jvE8XPVLJthi3e2Np2HTsZwqTevnRCaEvHDG3ht1U" 
+           alt="Logo Retro">
+    </div>
+
+    <!-- CONTENU TEXTE -->
+    <div class="retro-content">
+
+      <!-- RETOUR -->
+      <a href="../index.html#parcours" class="back-button">← Retour aux Parcours</a>
+
+      <h1>Influence – Pub – Application Retro</h1>
+
+      <div class="mission-tag">
+        Mission de communication digitale 📱
+      </div>
+
+      <p>
+        J’ai été <strong>contactée pour collaborer avec l’application Yope</strong>,
+        une application innovante dédiée au partage de contenus et à l’interaction
+        entre utilisateurs autour de challenges et concepts créatifs.
+      </p>
+
+      <p>
+        Mon rôle consistait à <strong>promouvoir l’application sur les réseaux sociaux</strong>,
+        créer du contenu attractif et organiser des campagnes pour accroître la visibilité
+        et l’engagement des utilisateurs.
+      </p>
+
+      <p>
+        Cette expérience m’a permis de travailler sur les bases de
+        <strong>l’influence digitale, la publicité et la communication en ligne</strong>,
+        en adaptant le message à la cible et aux plateformes.
+      </p>
+
+      <p>
+        J’ai appris à comprendre les attentes des utilisateurs, à valoriser
+        un produit de manière authentique et à utiliser les réseaux sociaux
+        comme de véritables leviers de communication.
+      </p>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 – Layana Krimi</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
