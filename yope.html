@@ -5,7 +5,7 @@ body {
   background: #fdf6e3;
 }
 
-/* CONTENEUR PRINCIPAL FLEX */
+/* CONTENEUR PRINCIPAL */
 .retro-container {
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ body {
   gap: 40px;
 }
 
-/* POST-IT LOGO */
+/* POST-IT */
 .logo-retro-postit {
   flex: 0 0 220px;
   background: #f8a8c4;
@@ -25,8 +25,8 @@ body {
   box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
   padding: 15px;
   text-align: center;
-  animation: floatLogo 3s ease-in-out infinite;
   position: relative;
+  animation: floatLogo 3s ease-in-out infinite;
 }
 
 /* SCOTCH */
@@ -42,16 +42,15 @@ body {
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
-/* IMAGE */
+/* IMAGE (TAILLE RÉDUITE) */
 .logo-retro-postit img {
-  width: 100%;
-  max-width: 180px;
+  width: 110px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* ANIMATION */
+/* ANIMATION POST-IT */
 @keyframes floatLogo {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
@@ -87,7 +86,7 @@ body {
   box-shadow: 5px 5px 0 #000;
 }
 
-/* TAG */
+/* TAG MISSION */
 .mission-tag {
   display: inline-block;
   margin: 20px 0 40px;
@@ -100,6 +99,7 @@ body {
   animation: breathe 3s ease-in-out infinite;
 }
 
+/* ANIMATION TAG */
 @keyframes breathe {
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }
@@ -118,10 +118,12 @@ body {
     text-align: center;
   }
 
-.logo-retro-postit img {
-  width: 120px;   /* plus petit */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+  .logo-retro-postit {
+    width: 180px;
+    margin-left: 0;
+  }
+
+  .logo-retro-postit img {
+    width: 90px;
+  }
 }
